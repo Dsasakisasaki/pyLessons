@@ -1,9 +1,10 @@
-ages=[28,50,8,20,78,25,22,10,27,33]
-num=5
+ages=[28,50,'ひみつ',20,78,25,22,10,'無回答',33]
 samples = list()
 for data in ages:
-    if 20 <= data < 30:
-        samples.append(data)
-        if len(samples) == num:
-            break
+    #if (! data instanceof Integer){}
+    if not isinstance(data, int):#データがではなかったら
+        continue
+    if data < 20 or data >= 30:
+        continue
+    samples.append(data)
 print(samples)
