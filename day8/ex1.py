@@ -50,3 +50,24 @@ pprint.pprint(q7)
 
 q8=[[3 if i*j==1 else 7 for j in range(3)]for i in range(3)]
 pprint.pprint(q8)
+
+
+q9=[[j*i for j in range(1,10)]for i in range(3
+    ,10,2)]
+pprint.pprint(q8)
+
+
+q10=[[i+j*2 for j in range(5)]for i in range(2,0,-1)]
+pprint.pprint(q10)
+
+
+q11=[['*' if j%2!=0 and i%2==0 else '_' for j in range(10)]for i in range(10)]
+pprint.pprint(q11)
+
+
+q12=[[i**2 +j for j in range(10)]for i in range(10)]
+pprint.pprint(q12)
+
+
+q13=[[i-j for j in range(i)]for i in range(10,0,-1)]
+pprint.pprint(q13)
